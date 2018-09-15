@@ -1,7 +1,7 @@
 
 #include <Wire.h>
 #include <Servo.h>
-#include <PinChangeInt.h>
+//#include <PinChangeInt.h>
 
 #define KP_ROLL 3.9
 #define KI_ROLL 0.03
@@ -117,7 +117,7 @@ unsigned long disarmRequestTime;
 
 void setup() {
   Serial.begin(115200);
-initMotor();
+//initMotor();
  sensorInit();
  delay(100);
  //remoteInit();
@@ -157,6 +157,3 @@ void loop(){
 
 
  
-
-
-
