@@ -2,6 +2,7 @@
 #include <Wire.h>
 #include <Servo.h>
 //#include <PinChangeInt.h>
+#include "CONTROL"
 
 #define KP_ROLL 3.9
 #define KI_ROLL 0.03
@@ -138,7 +139,7 @@ void loop(){
 
     remoteThrottle = 1200;
  
-  //control();
+  control();
   
   
   //=======================PRINTING PRESS============================
