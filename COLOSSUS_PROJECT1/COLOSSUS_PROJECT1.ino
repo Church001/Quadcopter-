@@ -118,14 +118,14 @@ unsigned long disarmRequestTime;
 void setup() {
   Serial.begin(115200);
 //initMotor();
- sensorInit();
+// sensorInit();
  delay(100);
  //remoteInit();
      motorVal[0] = 1000;
      motorVal[1] = 1000;
      motorVal[2] = 1000;
      motorVal[3] = 1000;
-  setMotor();
+  //setMotor();
   delay(2000);
 }
 
@@ -133,16 +133,16 @@ void setup() {
 //=======================================================================
 void loop(){
     loopTime = millis();
-  updateSensor();   
-  stateEstimation();
+//  updateSensor();   
+  //stateEstimation();
 
     remoteThrottle = 1200;
  
-  control();
+  //control();
   
   
   //=======================PRINTING PRESS============================
- printMotorOutPut();
+ //printMotorOutPut();
  //printRollPitch();
  //printRemoteVals();
  //printOffsets();
