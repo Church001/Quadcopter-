@@ -2,10 +2,10 @@
  
 
 void remoteInit(){
-  PCintPort::attachInterrupt(RX_PIN_CH0, chan0, CHANGE);
-  PCintPort::attachInterrupt(RX_PIN_CH1, chan1, CHANGE);
-  PCintPort::attachInterrupt(RX_PIN_CH2, chan2, CHANGE);
-  PCintPort::attachInterrupt(RX_PIN_CH3, chan3, CHANGE);
+  //PCintPort::attachInterrupt(RX_PIN_CH0, chan0, CHANGE);
+  //PCintPort::attachInterrupt(RX_PIN_CH1, chan1, CHANGE);
+  //PCintPort::attachInterrupt(RX_PIN_CH2, chan2, CHANGE);
+  //PCintPort::attachInterrupt(RX_PIN_CH3, chan3, CHANGE);
     Serial.print("done initializing remote...");
     digitalWrite(GREEN, HIGH);
       delay(500);
@@ -118,6 +118,3 @@ void chan3(){
     updateFlagsShared |= RX_FLAG_CH3;
   }
 }
-
-
-
